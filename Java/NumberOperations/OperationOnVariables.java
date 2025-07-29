@@ -1,3 +1,5 @@
+// Different mathematical operation on variables
+
 package Java.NumberOperations;
 
 import java.util.Scanner;

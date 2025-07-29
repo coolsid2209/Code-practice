@@ -1,3 +1,5 @@
+// Different ways to join strings
+
 package Java.String;
 
 import java.util.Arrays;
