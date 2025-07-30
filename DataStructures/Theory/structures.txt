@@ -1,0 +1,989 @@
+Data Structures deals with the storing and organizing of data to use it efficiently.
+Ways of organizing data in DS are :
+-Array
+-Stacks
+-Queues
+-Linked List
+-Graphs
+-Searching
+-Sorting, etc.
+
+Types of DS:
+
+(i) **Primitive Data Structure** - Those DS which are capable to hold a single value such as int, char, float, double, etc are called primitive data structure.
+
+(ii) **Non-Primitive Data Structure** -
+
+```
+Two types:-
+(i) Linear data structure - DS are arranged in a sequential manner. One element is connected to another in a linear form. i.e- Array, Stacks, Queues, Linked lists.
+
+(ii) Non-linear data structure - DS in which n number of elements are connected to one element are known as non-linear data structure.
+
+```
+
+Classification of data structure:
+
+(i) Static data structure- Size is allocated at the compile time.
+(ii) Dynamic data structure- Size is allocated at the run time.
+
+Operations in data structure-
+
+Insertion ; Deletion; Traversing; Searching; Sorting.
+
+Algorithms:-
+
+Set of rules which are required to perform calculation and problem-solving operations.
+
+Characteristics:
+
+(i) Input
+(ii) Output
+(iii) Unambiguity
+(iv) Finiteness
+(v) Effectiveness
+
+**Need of an algorithm:**
+
+(i) Scalability
+(ii) Performance
+
+**Factors of an algorithm:**
+
+(i) Modularity
+(ii) Correctness
+(iii) Maintainability
+(iv) Functionality
+(v) Robustness
+(vi) Simplicity
+(vii) User-friendly
+(viii) Extensible
+
+**Approaches of Algorithm:-**
+
+```
+(i) Brute force algorithm: It is an algorithm which finds all the possiblilites to find the solution. Optimizing is a way through which all the best solution is approached. Sacrificing is stopped when the best solution is found.
+
+(ii) Divide and Conquer: It is a way in which algorithms are break down so that it can be solved step by step.
+
+(iii) Greedy Algorithm: It a a algorithm which always hopes to get the best solution by performing different iterations. It is easy to implement and has a faster execution time.
+
+(iv) Dynamic Programming: In this type of algorithm breakdown of problem is done in to sub-problem and further sub-problems are solved to find the optimal solution and then it stores the result(memorization) and then at last we combine all the sub-problems to find the result of complex program.
+
+(v) Branch and Bound Algorithm: In this algorithmic approach we divide the sets of problem into subsets problem and then we evaluate the subsets to find the best solution.
+
+```
+
+Exception: It is only applied to the integer programming problems.
+
+```
+(vi) Randomized Algorithm: In this algorithmic approach random bits are added to the input to produce the output.
+
+(vii) Backtraking: This algorithmic approach solves the problems recrsively and if it doesn't satisfy the constraints then it removes the solution. In this approach it's necessary that it should satisfy the constraints.
+
+```
+
+**Complexity in Algorithm:-**
+
+```
+(i) Time Complexity: It finds out the time required to complete the execution of an algorithm. Denoted by big O notation. (It is mainly calculated by counting the number of steps to finish the execution).
+
+```
+
+**Types of time complexities:-**
+(a) **Worst Case**: When an algorithm takes a huge amount of time for execution then is considered as the worst case.
+(b) **Average Case:** When an algorithm takes the average time for execution then it is considered as the average case.
+(c) **Best Case:** When an algorithm takes the lowest time for execution then is considered as best case.
+
+```
+(ii) Space Complexity: It finds out the amount of space required by an algorithm to solve a problem. It is also denoted by big O notation.
+
+```
+
+Purpose of space requirement:
+(i) To store the instructions.
+(ii) To store the constant and variable values.
+(iii) To track the function calls.
+
+[Auxiliary Space: Space required by an algorithm apart from the input size].
+Space Complexity = Input Size + Auxiliary Space
+
+**Types of Algorithm:-**
+
+```
+(i) ***Search Algorithm:*** It is an algorithmic approach used to search a particular data in the computer or from a huge amount of data stored in the computer system.
+
+Two types:
+
+		(a) **Linear Search:** It is a seach algorithm which starts the search from the beginning of an array and it compares with each passing element in the array until the required element is found. If match is found then it returns to the index of element else return -1. Implementation can be done on the unsorted list.
+
+(b) **Binary Search:** Basically, it is used to find the middle element of the list. It is a search algorithm which is used to find the element from the sorted list which is arranged in sequential order.
+
+(ii) ***Sorting Algorithm:*** This algorithm is used to arrange the element in a sorted manner (ascending or descending).
+
+```
+
+**Asymptotic Notations:**
+
+**Pointer**:- Used to points the address of the value stored in the computer memory. It improves the performance for repititive process:
+Traversing String.
+Lookup Tables.
+Control Tables.
+Tree Structure.
+
+```
+																			***ARRAY***
+
+```
+
+An array is a sequential collection of similar types of data stored at contiguous memory locations.
+It is the simplest data structure where any data can be randomly accessed by using index number.
+
+Properties:-
+
+```
+(i) Each element should have same data type and size.
+(ii) Element are stored in contiguous memory location.
+(iii) Elements can be randomly accessed
+
+```
+
+Syntax:-
+
+```
+int arr[10] ;
+char A[33]  ;
+
+```
+
+Array reduces the complexity in storing the data of the similar data types.
+Array provides the single name for the group of elements.
+Array traversing is easy, we just need to increment the base address.
+Accessing the array element is easy which can be done by using index.
+
+**Time Complexities of different array operations:-**
+
+Algorithm	Average Case	Worst Case
+Access	 O(1) O(1)
+Search	 O(n) O(n)
+Insertion	 O(n) O(n)
+Deletion	 O(n) O(n)
+
+Indexing of the array:
+
+0-based indexing: First element will be A[0]
+1-based indexing: First element will be A[1]
+n-based indexing: First element can be at any index number
+
+Information needed in Accessing the Array element:-
+
+Base address of array
+Size of an element
+Type of indexing
+
+**Limitations:-**
+
+Array size must be known before using it in the program.
+Not possible to expand the size of array at the run time.
+Elements need to be in contiguous order.
+Inserting an element in the array needs shifting.
+
+**Types of array:**
+
+(i) 1D array
+(ii) 2D array
+
+1D Array- An array which is a
+
+2D Array:
+
+Declaration of 2D Array:
+
+```jsx
+int arr[max_rows][max_columns] ;
+int arr[2][2] = {0,1,2,3}      ;
+```
+
+```
+
+																		***LINKED LIST***
+
+```
+
+It is a collection of elements but not stored in consecutive location. Elements are linked with each other providing the address of the next element.
+
+Pointer is the variable which stores the address of the next element.
+Linked list contains two parts:
+(i) Data Element
+(ii) Pointer
+
+Declaration of Linked List:-
+
+To declare a linked list we need two things namely Variable and pointer variable.
+e.g:
+
+struct node
+{
+int data          ;
+struct node *next ;
+}
+
+Here, data is a variable, *next is a pointer variable and node is a structure which is consisting both.
+
+**Advantages of using linked list over array:-**
+
+Dynamic data structure
+Insertion
+Deletion
+Memory efficient
+Implementation
+
+**Disadvantages of linked list:-**
+
+Memory usage
+Traversing
+Backtracking
+
+**Applications of linked list:-**
+
+Representation of polynomial can be dione through linked list, coefficients and powers are stored in the node and the pointer points to the next element of the linked list.
+Used to represent the sparse matrix.
+It uses structure data type which can store different data type.
+Stack, Queue and various data structure can be implemented using linked list.
+In graph, adjacency list can be implemented using linked list.
+In hash table, entries can be implemented using linked list.
+Dynamic memory allocation is done using linked list at the run-time.
+
+**Singly Linked List:-**
+
+Linked list or Singly linked list is the collection of nodes which has two fields which are data stored at the particular address and the pointer.
+The last node contains the pointer to NULL.
+
+Uses:-
+
+Empty node is not present.
+List doesn't need to be declared in advance.
+List doesn't require to be contiguously present in the memory.
+Values of primitive types or objects can be stored.
+
+**Operations on Linked List:-**
+
+**(i) Insertion**
+
+```
+(a) Inserting at beginning:
+(b) Inserting at the end of the node:
+(c) Inserting after a given node:
+
+```
+
+**(ii) Deletion and Traversing**
+
+```
+(a) Deletion at the beginning
+(b) Deletion at the end
+(c) Deletion after a specified node
+(d) Traversing
+(e) Searching
+
+```
+
+**Doubly Linked List:-**
+
+In this type of linked list, node contains the pointer to the next as well previous node. It contains three parts: node data ; previous pointer and next pointer.
+
+NOTE:- Previous part of the first node and next part of the last node will always contain the NULL.
+
+Traversing can be done on the both direction because a node contain the address of both previous and the next.
+
+**Operations on doubly linked list:-**
+
+(i) Insertion
+
+```
+(a) Inserting at beginning
+(b) Inserting at the end of the node
+(c) Inserting after a given node
+
+```
+
+**(ii) Deletion and Traversing**
+
+```
+(a) Deletion at the beginning
+(b) Deletion at the end
+(c) Deletion after a specified node
+(d) Traversing
+(e) Searching
+
+```
+
+**Circular Linked List:-**
+
+A linked list in which the last node of the list contains a pointer to the first node of the list is known as circular linked list. This linked list has no end or beginning.
+No NULL value is present in the next part of the node.
+Circular linked list is used to maintain the surfing of web pages.
+
+Operations on circular singly linked list:-
+
+**(i) Insertion**
+
+```
+(a) Insertion at the beginning
+(b) Insertion at the end
+
+```
+
+**(ii) Deletion and Traversing**
+
+```
+(a) Deletion at the beginning
+(b) Deletion at the end
+(c) Searching
+(d) Traversing
+
+```
+
+**Circular Doubly Linked List:-**
+
+A linked list in which a node contain pointer to its previous node as well as the next node and have no NULL in any of the node. The first node contains the address of the last node and vise versa.
+NOTE:- Node which contains the address of the first node is the last node of the list.
+
+Operations on circular doubly linked list:-
+
+(a) Insertion at he beginning
+(b) Insertion at the end
+(c) Deletion at the beginning
+(d) Deletion at the end
+
+**Skip List:-**
+
+It is a probabilistic data structure used to store sorted list of data with a linked list.
+It can skip several elements of a list in one single step.
+It allows to search, remove and insert the elements very quickly.
+
+```
+***STACK***
+
+```
+
+Stack follows LIFO(Last In First Out) which means elements entering at the last will be the first to be out. It has only one end which is the top of the stack in which topmost element is pointed as the top pointer and is the only pointer.
+It can store elements of limited size.
+It follows a order to insert or delete the elements in the stack.
+
+**Operations on Stack:-**
+
+push(): Used to insert a element in the stack. When stack full then overflow condition occure.
+Operation steps:-
+(i) Check whether the stack is full.
+(ii) Overflow condition when the stack is full.
+(iii) Initialize set top value = -1, to check stack is empty.
+(iv) When a element is pushed, top = top + 1
+(v) Stack size = MAX, elements insertion closed.
+
+pop(): Used to remove or delete a element from the stack. When stack is empty then underflow condition occurs.
+Operation steps:-
+(i) Check whether stack is empty.
+(ii) Underflow condition when the stack is empty.
+(iii) If stack = not empty, top pointed element is accessed.
+(iv) When a element is poped, top = top - 1
+
+isEmply(): Helps to know whether the stack is empty or not.
+isFull(): Helps to find out whether the stack is full or not.
+peek(): It returns the element of the given position.
+count(): Returns the total number of elements in a stack.
+change(): changes the elements at the given position.
+display(): Prints all the element present in the stack.
+
+**Applications:-**
+
+Balancing of symbols
+String Reversal
+UNDO/REDO
+Recursion
+DFS
+Backtracking
+Expression Conversion
+Memory Management
+
+**Array Implementation:-**
+
+Stack is formed using the array, stacks operations are performed using the array.
+
+Push Operation:-
+
+(i) Increment the variable top
+(ii) Add element at the position of incremented top.
+
+NOTE:- When we try to insert a element into a completely filled stack, overflow condition occurs.
+
+`void push (int val,int n) //n is size of the stack`
+
+`{`
+
+`if (top == n )`
+
+`printf("\n Overflow");`
+
+`else`
+
+`{`
+
+`top = top +1 ;`
+
+`stack[top] = val ;`
+
+`}`
+
+`}`
+
+Pop Operation:-
+
+`int pop ()`
+
+`{`
+
+`if(top == -1)`
+
+`{`
+
+`printf("Underflow");`
+
+`return 0 ;`
+
+`}`
+
+`else`
+
+`{`
+
+`return stack[top - - ] ;`
+
+`}`
+
+`}`
+
+Peek Operation:-
+
+`int peek()`
+
+`{`
+
+`if (top == -1)`
+
+`{`
+
+`printf("Underflow");`
+
+`return 0 ;`
+
+`}`
+
+`else`
+
+`{`
+
+`return stack [top] ;`
+
+`}`
+
+`}`
+
+**Linked List Implementation:-**
+
+In this implementation, nodes are maintained non-contiguously in the memory. Each node contains a pointer to its immediate succesor node. Top most node of the stack always contains NULL in the address field.
+
+**Push Operation:-**
+
+(i) Create a node and allocate memory to it.
+(ii) If list is empty, push the item to the start node of the list.
+(iii) If node in the list already exist, then add new element in the beginning.
+
+**Pop Operation:-**
+
+(i) Check for underflow condition.
+(ii) Adjust the head pointer accordingly
+
+**Traversing:-**
+
+(i) Copy the head pointer into a temporary pointer.
+(ii) Move the temporary pointer through all the nodes of the list and print the value field attached to every node.
+
+```
+***QUEUE***
+
+```
+
+A queue is an ordered list which perform FIFO(First In First Out). It perform insertion from one end called REAR and deletion operation from one end called FRONT.
+
+**Applications:-**
+
+Used in railway ticket booking, movie ticket booking, etc.
+Used as waiting list for a single shared resource like printer, disk, etc.
+Used in operating systems to handle interrupts.
+Used to maintain the playlist of media player.
+Used in transfer of data.
+
+**Operations:-**
+
+Enqueue: Used to enter a element from the end of the queue.
+Dequeue: Used to delete a element from the front of the queue. It also returns the element as an integer value from the front end.
+Peek: Used to return the element which is pointed by the front pointer.
+isfull: It shows the overflow condition.
+isempty: It shows the underflow condition.
+
+**Types of Queue:-**
+
+**Linear queue**: A queue which follows FIFO strictly which means elements enter at one end(rear) and get removed from one end(front).
+**Circular queue**: A queue in which the last element is connected to the first element and the nodes are represented as circular. If empty space is available in the queue then the new element can be inserted by incrementing the value of rear.
+**Priority queue**: A queue in which elements are arranged according to the priority. Insertion takes place based on the arrival while deletion occurs based on the priority.
+**Deque:** This queue doesn't follow the FIFO principle. Insertion and deletion can occur from the both ends.
+
+**Array Representation:-**
+
+**Insertion:**
+
+`Step 1: IF REAR = MAX - 1
+Write OVERFLOW
+Go to step
+[END OF IF]
+Step 2: IF FRONT = -1 and REAR = -1
+SET FRONT = REAR = 0
+ELSE
+SET REAR = REAR + 1
+[END OF IF]
+Step 3: Set QUEUE[REAR] = NUM
+Step 4: EXIT`
+
+**Deletion:**
+
+`Step 1: IF FRONT = -1 or FRONT > REAR
+Write UNDERFLOW
+ELSE
+SET VAL = QUEUE[FRONT]
+SET FRONT = FRONT + 1
+[END OF IF]
+Step 2: EXIT`
+
+**Drawback:**
+
+Memory wastage
+Deciding array size
+
+Linked List Representation:-
+
+**Insertion:**
+
+```
+Step 1: Ptr = (struct node *) malloc (sizeof(struct node)) ;
+Step 2: (Case 1 -> front==NULL) is true
+ptr -> data = item                                         ;
+if(front == NULL)
+{
+front = ptr                                                ;
+rear = ptr                                                 ;
+front -> next = NULL                                       ;
+rear -> next = NULL                                        ;
+}
+(Case 2 -> front==NULL) is false
+rear -> next = ptr                                         ;
+rear = ptr                                                 ;
+rear->next = NULL                                          ;
+
+```
+
+**Deletion:**
+
+`Step 1: IF FRONT = NULL
+Write " Underflow "
+Go to Step 5
+[END OF IF]
+Step 2: SET PTR = FRONT
+Step 3: SET FRONT = FRONT -> NEXT
+Step 4: FREE PTR
+Step 5: END`
+
+**Circular Queue:-**
+
+**Operations:**
+
+**Front**: Gives the front element
+**Rear**: Gives the last element
+**enQueue**: Insertion of new element
+
+`Step 1: IF (REAR+1)%MAX = FRONT
+Write " OVERFLOW "
+Goto step 4
+[End OF IF]
+Step 2: IF FRONT = -1 and REAR = -1
+SET FRONT = REAR = 0
+ELSE IF REAR = MAX - 1 and FRONT ! = 0
+SET REAR = 0
+ELSE
+SET REAR = (REAR + 1) % MAX
+[END OF IF]
+Step 3: SET QUEUE[REAR] = VAL
+Step 4: EXIT`
+
+**deQueue:** Deletion of element
+
+`Step 1: IF FRONT = -1
+Write " UNDERFLOW "
+Goto Step 4
+[END of IF]
+Step 2: SET VAL = QUEUE[FRONT]
+Step 3: IF FRONT = REAR
+SET FRONT = REAR = -1
+ELSE
+IF FRONT = MAX -1
+SET FRONT = 0
+ELSE
+SET FRONT = FRONT + 1
+[END of IF]
+[END OF IF]
+Step 4: EXIT`
+
+**Applications:-**
+
+**Memory management**: It is very efficient in circular queue because elements are placed on unused location but not efficient in case of linear queue.
+**CPU scheduling**: OS uses it to insert the processes to execute.
+**Traffic System:** Lights gets interchanged sequentially in circular loop according to the assigned interval.
+
+**DeQue:-**
+
+A linear data structure in which insertion and deletion takes place from both the end (REAR and FRONT) are known as Deque.
+
+**Properties:-**
+
+(i) It is considered as a stack because insertion and deletion can be performed from one end which follows LIFO.
+(ii) It is considered as a queue because the insertion is performed at one end and deletion is performed at one end which follows FIFO.
+
+**Types:-**
+
+Input -restricted queue: Insertion from one end and deletion from both end is allowed.
+Output-restricted queue: Insertion from both end and deletion from one end is allowed.
+
+**Operations:-**
+
+Insert at front
+Delete from end
+Insert at rear
+Delete at rear
+isFull(): Returns true if stack is full.
+isEmpty(): Return true if stack is empty.
+
+**Priority Queue:-**
+
+**Characteristics:-**
+
+Every element has a priority.
+Element with higher priority will be deleted first.
+Two element having the same priority will follow FIFO.
+
+**Types:-**
+
+(i) Ascending order priority queue: Lower priority number is given as the highest priority.
+(ii) Descending order priority queue: Highest priority number is given at the highest priority.
+
+**Heap**:- It is a tree-based data structure that forms a complete binary tree and satisfy the heap property.
+
+**Types:-**
+
+(i) **Max heap:**- A heap in which the value of the parent node is greater than the value of the child node.
+
+(ii) **Min heap:**- A heap in which the value of the parent node is less than the value of the child node.
+
+**Applications:-**
+
+Used in Djkstra's shortest path.
+Used in Prim's algorithm.
+Used in data compression
+Used in heap sort
+Used in priority scheduling of operating system.
+
+```
+SEARCHING
+
+```
+
+Process of finding a particular element in the list, if element is present in the list then it is said to be successful search and it returns the location of the element else the search is unsuccessful.
+
+**Types:-**
+
+**(i) Linear Search:** In this search algorithm, we match each element of the list with the item whose location is to be found, if the match is found then the location of the item is returned else it returns the NULL.
+It is mostly used for the unordered list in which item are not sorted.
+
+**Algorithm:-**
+
+`LINEAR_SEARCH(A, N, VAL)
+Step 1: [INITIALIZE] SET POS = -1
+Step 2: [INITIALIZE] SET I = 1
+Step 3: Repeat Step 4 while I<=N
+Step 4: IF A[I] = VAL
+SET POS = I
+PRINT POS
+Go to Step 6
+[END OF IF]
+SET I = I + 1
+[END OF LOOP]
+Step 5: IF POS = -1
+PRINT " VALUE IS NOT PRESENTIN THE ARRAY "
+[END OF IF]
+Step 6: EXIT`
+
+**(ii) Binary Search**: In this search algorithm, we follow divide and conquer approach in which the list is divided into two equal halves and the element is matched with the middle element, if match found then the location of middle element is returned else searching is done into the either halves of the list until the match found.
+It works efficiently on the sorted list.
+
+**Algorithm:-**
+
+`BINARY_SEARCH(A, lower_bound, upper_bound, VAL)
+Step 1: [INITIALIZE] SET BEG = lower_bound
+END = upper_bound, POS = - 1
+Step 2: Repeat Steps 3 and 4 while BEG <=END
+Step 3: SET MID = (BEG + END)/2
+Step 4: IF A[MID] = VAL
+SET POS = MID
+PRINT POS
+Go to Step 6
+ELSE IF A[MID] > VAL
+SET END = MID - 1
+ELSE
+SET BEG = MID + 1
+[END OF IF]
+[END OF LOOP]
+Step 5: IF POS = -1
+PRINT "VALUE IS NOT PRESENT IN THE ARRAY"
+[END OF IF]
+Step 6: EXIT`
+
+```
+SORTING
+
+```
+
+Arranging the data in a particular format of sequence. It is used to represent data in more readable format(Increasing or decreasing)
+e.g:- Telephone directory, Dictionary, Search filters in online shopping portal, Index of a book
+
+In-place Sorting: Algorithm which require some extra space for comparison and temporary storage of data elements. Sortingg which doesn't uses any extra space.
+
+Not-in-place Sorting: Program which requires space more than or equal to the elements being sorted. Sorting which uses equal or more space.
+
+**Types of Sorting:-**
+
+**(i) Bubble Sort:** Sorting in which repeated swapping of adjacent elements are done by comparison until the list is in the ordered form.
+Average and worst case: O(n^2)
+Best case: O(n)
+
+`Algorithm:-`
+
+`begin BubbleSort(arr)`
+
+`for all array elements`
+
+`if arr[i] > arr[i+1]`
+
+`swap(arr[i], arr[i+1])`
+
+`end if`
+
+`end for`
+
+`return arr`
+
+`end BubbleSort`
+
+**(ii) Insertion Sort**: In this sorting, the sorting starts with the first element and it is compared with the next element in the list, if found smaller than the other compared element then it remains at the same place else swapped. Again, it compares the second element to the third element and does the same. If while sorting, any element comes in between which is smaller then the comparison starts from there it self. The process continues until the whole list is sorted.
+Average and worst case: O(n^2)
+Best case: O(n)
+
+Algorithm:-
+
+Step 1 − If it is the first element, it is already sorted. return 1             ;
+Step 2 − Pick next element
+Step 3 − Compare with all elements in the sorted sub-list
+Step 4 − Shift all the elements in the sorted sub-list that is greater than the
+value to be sorted
+Step 5 − Insert the value
+Step 6 − Repeat until list is sorted
+
+**(iii) Selection Sort:** In this sorting the smallest element among the unsorted list is taken and placed at the first position of the list, then will look for the next smallest element and place it in the second position and cont, until the list is fully sorted.
+It has the same time complexity for best, worst and average case: O(n^2)
+
+Algorithm:-
+
+`SELECTION SORT(arr, n)`
+
+`Step 1: Repeat Steps 2 and 3 for i = 0 to n-1`
+
+`Step 2: CALL SMALLEST(arr, i, n, pos)`
+
+`Step 3: SWAP arr[i] with arr[pos]`
+
+`[END OF LOOP]`
+
+`Step 4: EXIT`
+
+`SMALLEST (arr, i, n, pos)`
+
+`Step 1: [INITIALIZE] SET SMALL = arr[i]`
+
+`Step 2: [INITIALIZE] SET pos = i`
+
+`Step 3: Repeat for j = i+1 to n`
+
+`if (SMALL > arr[j])`
+
+`SET SMALL = arr[j]`
+
+`SET pos = j`
+
+`[END OF if]`
+
+`[END OF LOOP]`
+
+`Step 4: RETURN pos`
+
+**(iv) Merge Sort:** This algorithm follows divide and conquer rule. Firstly, it divides the list into two equal halves then the sub-list into equal halves until they all got seperated, then it merges the sorted halves until it all got sorted and combined.
+It has the same time complexity for best, worst and average case: O(n*logn)
+
+**Algorithm:-**
+
+`MERGE_SORT(arr, beg, end)`
+
+`if beg < end`
+
+`set mid = (beg + end)/2`
+
+`MERGE_SORT(arr, beg, mid)`
+
+`MERGE_SORT(arr, mid + 1, end)`
+
+`MERGE (arr, beg, mid, end)`
+
+`end of if`
+
+`END MERGE_SORT`
+
+**(v) Quick Sort:** This algorithm also follows divide and conquer approach. Firstly it picks the pivot element (pivot can be any element but it is mostly preffered that we should choose the median of the list as the pivot element) then it divides the array of list into two equal sub-array, pivot element can be any side of the sub-array. The array is sorted recursively
+Average and Best case: O(n*logn)
+Worst case: O(n^2)
+
+**Algorithm:-**
+
+Step 1 − Choose the highest index value has pivot
+Step 2 − Take two variables to point left and right of the list excluding pivot
+Step 3 − left points to the low index
+Step 4 − right points to the high
+Step 5 − while value at left is less than pivot move right
+Step 6 − while value at right is greater than pivot move left
+Step 7 − if both step 5 and step 6 does not match swap left and right
+Step 8 − if left ≥ right, the point where they met is new pivot
+
+**(vi) Heap Sort:**
+
+**(vii) Radix Sort**: In this algorithm, sorting is done in the alphabetical order. With every pass of sorting the alphabets are arranged according to the alphabet sequence.
+
+**Algorithm:-**
+
+Step 1:Find the largest number in ARR as LARGE
+Step 2: [INITIALIZE] SET NOP = Number of digits
+in LARGE
+Step 3: SET PASS =0
+Step 4: Repeat Step 5 while PASS <= NOP-1
+Step 5: SET I = 0 and INITIALIZE buckets
+Step 6: Repeat Steps 7 to 9 while I
+Step 7: SET DIGIT = digit at PASSth place in A[I]
+Step 8: Add A[I] to the bucket numbered DIGIT
+Step 9: INCREMENT bucket count for bucket
+numbered DIGIT
+[END OF LOOP]
+Step 10: Collect the numbers in the bucket
+[END OF LOOP]
+Step 11: END
+
+**(viii) Cycle Sort:**
+
+**(ix) Bucket Sort:**
+
+**(x) Counting Sort:**
+
+```
+GRAPHS
+
+```
+
+A graph is a pictorial representation of sets of objects.
+A graph G can be defined as the ordered set G(V,E) where V(G) is the sets of vertices and V(E) is the sets of edges.
+Edges are used to connect the two vertices.
+Vertices are used to represent the nodes in the graph.
+Path represent the sequence of edges between the two vertices.
+Closed path is that which has same initial node and terminal node.
+
+**Operations:-**
+
+Add edge
+Add vertex
+Display vertex
+
+***Types of Graph:-***
+
+Directed Graph: Edges form an ordered pair and edges represent a path from vertex A to vertex B. It represent a direction from any vertex A to any vertex B.
+where A- initial node
+B- terminal node
+
+Undirected Graph: In this type of graph, edges are bidirectional means no direction. Graph can be traversed in any direction.
+
+Directed Acyclic Graph: Directed graph that has no cycles.
+
+Weighted Graph: A graph which has some value with every edge in the graph.
+
+Unweighted Graph: A graph which has no value associated with its edges.
+
+Complete Graph: A graph in which every two vertices are adjacent.
+
+Connected Graph: A graph in which there is a path between every pair of vertices.
+
+***Graph Representation:***-
+
+Sequential Representation/ Matrix Representation: Rows and columns are represented by the graph vertices. Graph having n vertices will have n x n dimension.
+Entry Mij in the matrix representation of an undirected graph G will be 1.
+
+Linked Representation: An adjacency list is used to store the graph into the computer's memory.
+An adjacency list is maintained for each node present in the graph which stores the node value and a pointer to the next adjacent node to the respective node. If all the adjacent nodes are traversed then store the NULL in the pointer field of last node of the list. The sum of the lengths of adjacency lists is equal to the twice of the number of edges present in an undirected graph.
+
+Breadth First Search(BFS):-
+It is a traversal algorithm which starts traversing the graph from root node and it explores all the neighbouring nodes. It then select the nearest node and explore all the unexplored nodes.
+
+**Algorithm:**
+
+`Step 1: SET STATUS = 1 (ready state)
+for each node in G
+Step 2: Enqueue the starting node A
+and set its STATUS = 2
+(waiting state)
+Step 3: Repeat Steps 4 and 5 until
+QUEUE is empty
+Step 4: Dequeue a node N. Process it
+and set its STATUS = 3
+(processed state).
+Step 5: Enqueue all the neighbours of
+N that are in the ready state
+(whose STATUS = 1) and set
+their STATUS = 2
+(waiting state)
+[END OF LOOP]
+Step 6: EXIT`
+
+Depth First Search(DFS):-
+It is a type of recursive algorithm. It starts with the initial node of the graph and goes deeperuntil the goal node or the node which has no children is found.
+
+**Algorithm:**
+
+Step 1: SET STATUS = 1 (ready state) for each node in G
+Step 2: Push the starting node A on the stack and set its STATUS = 2 (waiting state)
+Step 3: Repeat Steps 4 and 5 until STACK is empty
+Step 4: Pop the top node N. Process it and set its STATUS = 3 (processed state)
+Step 5: Push on the stack all the neighbours of N that are in the ready state (whose STATUS = 1) and set their
+STATUS = 2 (waiting state)
+[END OF LOOP]
+Step 6: EXIT
