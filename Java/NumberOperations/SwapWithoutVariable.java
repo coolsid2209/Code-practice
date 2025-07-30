@@ -1,6 +1,6 @@
 // How to swap 2 no without using 3rd variable Program in java
 
-package Java.String;
+package Java.NumberOperations;
 
 import java.util.Scanner;
 
