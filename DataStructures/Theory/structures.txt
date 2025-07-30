@@ -39,7 +39,7 @@ Characteristics:
 
 (i) Input
 (ii) Output
-(iii) Unambiguity
+(iii) Unambiguous
 (iv) Finiteness
 (v) Effectiveness
 
@@ -62,7 +62,7 @@ Characteristics:
 **Approaches of Algorithm:-**
 
 ```
-(i) Brute force algorithm: It is an algorithm which finds all the possiblilites to find the solution. Optimizing is a way through which all the best solution is approached. Sacrificing is stopped when the best solution is found.
+(i) Brute force algorithm: It is an algorithm which finds all the possibilities to find the solution. Optimizing is a way through which all the best solution is approached. Sacrificing is stopped when the best solution is found.
 
 (ii) Divide and Conquer: It is a way in which algorithms are break down so that it can be solved step by step.
 
@@ -79,7 +79,7 @@ Exception: It is only applied to the integer programming problems.
 ```
 (vi) Randomized Algorithm: In this algorithmic approach random bits are added to the input to produce the output.
 
-(vii) Backtraking: This algorithmic approach solves the problems recrsively and if it doesn't satisfy the constraints then it removes the solution. In this approach it's necessary that it should satisfy the constraints.
+(vii) Backtracking: This algorithmic approach solves the problems recursively and if it doesn't satisfy the constraints then it removes the solution. In this approach it's necessary that it should satisfy the constraints.
 
 ```
 
@@ -115,7 +115,7 @@ Space Complexity = Input Size + Auxiliary Space
 
 Two types:
 
-		(a) **Linear Search:** It is a seach algorithm which starts the search from the beginning of an array and it compares with each passing element in the array until the required element is found. If match is found then it returns to the index of element else return -1. Implementation can be done on the unsorted list.
+		(a) **Linear Search:** It is a search algorithm which starts the search from the beginning of an array and it compares with each passing element in the array until the required element is found. If match is found then it returns to the index of element else return -1. Implementation can be done on the unsorted list.
 
 (b) **Binary Search:** Basically, it is used to find the middle element of the list. It is a search algorithm which is used to find the element from the sorted list which is arranged in sequential order.
 
@@ -125,7 +125,7 @@ Two types:
 
 **Asymptotic Notations:**
 
-**Pointer**:- Used to points the address of the value stored in the computer memory. It improves the performance for repititive process:
+**Pointer**:- Used to points the address of the value stored in the computer memory. It improves the performance for repetitive process:
 Traversing String.
 Lookup Tables.
 Control Tables.
@@ -373,7 +373,7 @@ It follows a order to insert or delete the elements in the stack.
 
 **Operations on Stack:-**
 
-push(): Used to insert a element in the stack. When stack full then overflow condition occure.
+push(): Used to insert a element in the stack. When stack full then overflow condition occur.
 Operation steps:-
 (i) Check whether the stack is full.
 (ii) Overflow condition when the stack is full.
@@ -386,9 +386,9 @@ Operation steps:-
 (i) Check whether stack is empty.
 (ii) Underflow condition when the stack is empty.
 (iii) If stack = not empty, top pointed element is accessed.
-(iv) When a element is poped, top = top - 1
+(iv) When a element is popped, top = top - 1
 
-isEmply(): Helps to know whether the stack is empty or not.
+isEmpty(): Helps to know whether the stack is empty or not.
 isFull(): Helps to find out whether the stack is full or not.
 peek(): It returns the element of the given position.
 count(): Returns the total number of elements in a stack.
@@ -491,7 +491,7 @@ Peek Operation:-
 
 **Linked List Implementation:-**
 
-In this implementation, nodes are maintained non-contiguously in the memory. Each node contains a pointer to its immediate succesor node. Top most node of the stack always contains NULL in the address field.
+In this implementation, nodes are maintained non-contiguously in the memory. Each node contains a pointer to its immediate successor node. Top most node of the stack always contains NULL in the address field.
 
 **Push Operation:-**
 
@@ -695,7 +695,7 @@ Two element having the same priority will follow FIFO.
 
 **Applications:-**
 
-Used in Djkstra's shortest path.
+Used in dijkstra's shortest path.
 Used in Prim's algorithm.
 Used in data compression
 Used in heap sort
@@ -727,7 +727,7 @@ Go to Step 6
 SET I = I + 1
 [END OF LOOP]
 Step 5: IF POS = -1
-PRINT " VALUE IS NOT PRESENTIN THE ARRAY "
+PRINT " VALUE IS NOT PRESENT IN THE ARRAY "
 [END OF IF]
 Step 6: EXIT`
 
@@ -764,7 +764,7 @@ SORTING
 Arranging the data in a particular format of sequence. It is used to represent data in more readable format(Increasing or decreasing)
 e.g:- Telephone directory, Dictionary, Search filters in online shopping portal, Index of a book
 
-In-place Sorting: Algorithm which require some extra space for comparison and temporary storage of data elements. Sortingg which doesn't uses any extra space.
+In-place Sorting: Algorithm which require some extra space for comparison and temporary storage of data elements. Sorting which doesn't uses any extra space.
 
 Not-in-place Sorting: Program which requires space more than or equal to the elements being sorted. Sorting which uses equal or more space.
 
@@ -843,8 +843,8 @@ Algorithm:-
 
 `Step 4: RETURN pos`
 
-**(iv) Merge Sort:** This algorithm follows divide and conquer rule. Firstly, it divides the list into two equal halves then the sub-list into equal halves until they all got seperated, then it merges the sorted halves until it all got sorted and combined.
-It has the same time complexity for best, worst and average case: O(n*logn)
+**(iv) Merge Sort:** This algorithm follows divide and conquer rule. Firstly, it divides the list into two equal halves then the sub-list into equal halves until they all got separated, then it merges the sorted halves until it all got sorted and combined.
+It has the same time complexity for best, worst and average case: O(n*log n)
 
 **Algorithm:-**
 
@@ -864,8 +864,8 @@ It has the same time complexity for best, worst and average case: O(n*logn)
 
 `END MERGE_SORT`
 
-**(v) Quick Sort:** This algorithm also follows divide and conquer approach. Firstly it picks the pivot element (pivot can be any element but it is mostly preffered that we should choose the median of the list as the pivot element) then it divides the array of list into two equal sub-array, pivot element can be any side of the sub-array. The array is sorted recursively
-Average and Best case: O(n*logn)
+**(v) Quick Sort:** This algorithm also follows divide and conquer approach. Firstly it picks the pivot element (pivot can be any element but it is mostly preferred that we should choose the median of the list as the pivot element) then it divides the array of list into two equal sub-array, pivot element can be any side of the sub-array. The array is sorted recursively
+Average and Best case: O(n*log n)
 Worst case: O(n^2)
 
 **Algorithm:-**
@@ -952,7 +952,7 @@ Linked Representation: An adjacency list is used to store the graph into the com
 An adjacency list is maintained for each node present in the graph which stores the node value and a pointer to the next adjacent node to the respective node. If all the adjacent nodes are traversed then store the NULL in the pointer field of last node of the list. The sum of the lengths of adjacency lists is equal to the twice of the number of edges present in an undirected graph.
 
 Breadth First Search(BFS):-
-It is a traversal algorithm which starts traversing the graph from root node and it explores all the neighbouring nodes. It then select the nearest node and explore all the unexplored nodes.
+It is a traversal algorithm which starts traversing the graph from root node and it explores all the neighboring nodes. It then select the nearest node and explore all the unexplored nodes.
 
 **Algorithm:**
 
@@ -966,7 +966,7 @@ QUEUE is empty
 Step 4: Dequeue a node N. Process it
 and set its STATUS = 3
 (processed state).
-Step 5: Enqueue all the neighbours of
+Step 5: Enqueue all the neighbors of
 N that are in the ready state
 (whose STATUS = 1) and set
 their STATUS = 2
@@ -975,7 +975,7 @@ their STATUS = 2
 Step 6: EXIT`
 
 Depth First Search(DFS):-
-It is a type of recursive algorithm. It starts with the initial node of the graph and goes deeperuntil the goal node or the node which has no children is found.
+It is a type of recursive algorithm. It starts with the initial node of the graph and goes deeper until the goal node or the node which has no children is found.
 
 **Algorithm:**
 
@@ -983,7 +983,7 @@ Step 1: SET STATUS = 1 (ready state) for each node in G
 Step 2: Push the starting node A on the stack and set its STATUS = 2 (waiting state)
 Step 3: Repeat Steps 4 and 5 until STACK is empty
 Step 4: Pop the top node N. Process it and set its STATUS = 3 (processed state)
-Step 5: Push on the stack all the neighbours of N that are in the ready state (whose STATUS = 1) and set their
+Step 5: Push on the stack all the neighbors of N that are in the ready state (whose STATUS = 1) and set their
 STATUS = 2 (waiting state)
 [END OF LOOP]
 Step 6: EXIT
